@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<!-- header start -->
+  <header>
+    <div class="container">
+      <!-- navber -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid g-0">
+          <!-- logo -->
+          <a class="navbar-brand" href="index.html">
+            Food<span class="common_color"></span>Mood
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navberS" aria-controls="navberS" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- menu -->
+          <div class="collapse navbar-collapse menu" id="navberS">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find-Meals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <!-- navber -->
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- hero start -->
+  
+  <section class="hero">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+              <div class="h_box">
+                    <h3>FOOD<span> MOOD</span> </h3>
+                    <p>A restaurant that only serves cheese, but hundreds of cheeses from many countries and in lots of different forms. They serve reasonably priced lunches but dinner can be expensive. Lovely food and a very elegant dining room, looking onto an amazing flower garden.</p>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- hero end -->
+
+
+
+  <div class = "food_cont">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Find Meals For Your Ingredients</h2>
+        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+          
+        </blockquote>
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<section class="signup mb-5">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-10 ">
+        <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- footer start -->
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-md-3">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minima soluta distinctio eaque magni veritatis dicta dolore dignissimos totam quis!</p>
+                </div>
+            </div>
+    
+            <div class="col-md-3">
+                <div class="box">
+                    <h3>Locations</h3>
+                    <a href="#">India</a>
+                    <a href="#">USA</a>
+                    <a href="#">France</a>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Food-Mood</a>
+                    <a href="#">Contact</a>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+
+                </div>
+            </div>
+        </div>
+        <h1 class="credit"> Created by <a href="#">mr. web designer</a> &copy; copyright @ 2021 </h1>
+
+    </div>
+</footer>
+<!-- footer end -->
+
+  <script src = "script.js"></script>
+</body>
+</html>
